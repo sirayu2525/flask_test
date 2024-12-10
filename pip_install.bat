@@ -6,3 +6,5 @@ if "%1"=="" (
 )
 pip install %*
 pip freeze > requirements.txt
+
+REM https://zenn.dev/shomtsm/articles/6110fac57d3f40
