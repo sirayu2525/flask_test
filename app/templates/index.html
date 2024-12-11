@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>{{name}}</title>
     </head>
     <body>
-    <h1>Webアプリ初心者のFlaskチュートリアル</h1>
+    {% if name == "kiyokiyo" %}
+    <h1>スペシャル{{name}}神社</h1>
+    {% elif name %}
+    <h1>{{name}}神社</h1>
+    {% else %}
+    <h1>ただの神社</h1>
+    {% endif %}
+    <img src="/static/images/torii.jpg" alt="鳥居">
+    {% for word in okyo %}
+    <p>{{word}}</p>
+    {% endfor %}
     </body>
 </html>
