@@ -1,8 +1,8 @@
 import sys
 import os
 
-# プロジェクトのルートディレクトリをインポートパスに追加
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# # プロジェクトのルートディレクトリをインポートパスに追加
+# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from models.database import init_db
 
