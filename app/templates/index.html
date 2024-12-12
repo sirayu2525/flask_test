@@ -16,8 +16,10 @@
         <input type="submit" value="Submit">
     </form>
     <img src="/static/images/torii.jpg" alt="鳥居">
-    {% for word in okyo %}
-    <p>{{word}}</p>
+    <!-- 以下を変更 -->
+    {% for onegai in all_onegai %}
+    <p>{{onegai.title}}:{{onegai.body}}（{{onegai.date}}）</p>
     {% endfor %}
+    <!-- 変更終わり -->
     </body>
 </html>
