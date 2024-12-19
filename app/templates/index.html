@@ -3,6 +3,9 @@
     <head>
         <title>{{name}}</title>
     </head>
+
+    <a href="/logout">ログアウトする</a>
+
     <body>
     {% if name == "kiyokiyo" %}
     <h1>スペシャル{{name}}神社</h1>
@@ -11,10 +14,8 @@
     {% else %}
     <h1>ただの神社</h1>
     {% endif %}
-    <form action="/index" method="POST">
-        <input type="text" name="name" placeholder="Enter name">
-        <input type="submit" value="Submit">
-    </form>
+
+    
     <img src="/static/images/torii.jpg" alt="鳥居">
     <form action="/add" method="post">
         <input type="text" name="title" placeholder="title">
